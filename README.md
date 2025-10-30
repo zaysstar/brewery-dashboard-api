@@ -7,9 +7,7 @@
 
 ### 🎥 Walkthrough GIF
 
-**TODO:** Before you submit, record a GIF of your app working (showing the stats, the search, and the filter) and replace the empty `()` below with the link to your GIF. You can drag-and-drop a GIF into a GitHub issue, comment, or this README to get a URL.
-
-![Brewery Dashboard Walkthrough]()
+![ScreenRecording2025-10-30163750-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/163f4c8d-892c-40cb-8500-40f12d9131de)
 
 ---
 
