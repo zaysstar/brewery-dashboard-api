@@ -1,16 +1,73 @@
-# React + Vite
+# Project 5 - Brewery Data Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Description:** A dynamic and responsive data dashboard built with React. This application fetches data from the public Open Brewery DB API, displays summary statistics, and allows users to search and filter the list of breweries in real-time.
 
-Currently, two official plugins are available:
+**Built for:** Week 6, Project 5
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+### 🎥 Walkthrough GIF
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**TODO:** Before you submit, record a GIF of your app working (showing the stats, the search, and the filter) and replace the empty `()` below with the link to your GIF. You can drag-and-drop a GIF into a GitHub issue, comment, or this README to get a URL.
 
-## Expanding the ESLint configuration
+![Brewery Dashboard Walkthrough]()
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+### 💻 Tech Stack
+
+* **Framework:** React
+* **Bundler:** Vite
+* **Language:** JavaScript (ES6+)
+* **Styling:** CSS3
+* **API:** [Open Brewery DB API](https://www.openbrewerydb.org/)
+
+---
+
+### 🚀 How to Run
+
+1.  Clone the repository:
+    ```bash
+    git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
+    ```
+2.  Navigate to the project directory:
+    ```bash
+    cd brewery-api
+    ```
+3.  Install dependencies:
+    ```bash
+    npm install
+    ```
+4.  Run the development server:
+    ```bash
+    npm run dev
+    ```
+5.  Open [http://localhost:5173/](http://localhost:5173/) (or the port shown in your terminal) in your browser.
+
+---
+
+### ✅ Features Checklist
+
+#### Required Features
+- [x] The site has a dashboard displaying a list of data fetched using an API call
+- [x] The dashboard displays at least 10 unique items, one per row
+- [x] The dashboard includes at least two features in each row
+- [x] `useEffect` React hook and `async/await` are used
+- [x] The app dashboard includes at least three summary statistics about the data
+- [x] A search bar allows the user to search for an item in the fetched data
+- [x] The search bar *correctly* filters items in the list, only displaying items matching the search query
+- [x] The list of results dynamically updates as the user types into the search bar
+- [x*] An additional filter allows the user to restrict displayed items by specified categories
+- [x] The filter restricts items in the list using a *different attribute* than the search bar
+- [x] The filter *correctly* filters items in the list
+- [x] The dashboard list dynamically updates as the user adjusts the filter
+
+#### Stretch Features
+- [x] Multiple filters can be applied simultaneously
+- [x] Filters use different input types (e.g., text input and a dropdown)
+- [ ] The user can enter specific bounds for filter values
+
+---
+
+### 📝 License
+
+This project is licensed under the MIT License.
