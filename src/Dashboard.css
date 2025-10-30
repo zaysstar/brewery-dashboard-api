@@ -1,0 +1,143 @@
+.dashboard-container {
+  width: 100%;
+  max-width: 1000px; /* Stop it from getting too wide */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Adds nice spacing between all sections */
+}
+
+.dashboard-container h2 {
+  font-size: 2.5rem;
+  color: #222;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* --- Summary Stat Cards --- */
+.summary-stats {
+  display: flex; /* Arrange cards in a row */
+  gap: 1.5rem;   /* Space between cards */
+  justify-content: space-between;
+}
+
+.stat-card {
+  flex: 1; /* Make all cards grow to fill the space */
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px); /* Nice little lift on hover */
+}
+
+.stat-card h3 {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #007aff; /* A nice accent color */
+}
+
+/* --- Filters Section --- */
+.filters {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Style both input and select to look similar */
+.filters input,
+.filters select {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+  color: #333; /* <-- ADD THIS LINE */
+}
+
+.filters input:focus,
+.filters select:focus {
+  outline: 2px solid #007aff;
+  border-color: transparent;
+}
+
+/* Give the search bar more space */
+.filters input {
+  flex: 3;
+}
+/* Give the dropdown less space */
+.filters select {
+  flex: 1;
+}
+
+/* --- Data List Table --- */
+.data-list {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden; /* This keeps the corners rounded */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* Cleaner table lines */
+}
+
+/* Table Header */
+thead tr {
+  background-color: #f9f9f9;
+  border-bottom: 2px solid #eee;
+}
+
+th {
+  padding: 1rem 1.5rem;
+  text-align: left;
+  font-size: 0.9rem;
+  color: #444;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Table Body */
+tbody tr {
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.15s ease;
+}
+
+/* "Zebra-striping" for easier reading */
+tbody tr:nth-child(even) {
+  background-color: #fcfcfc;
+}
+
+tbody tr:hover {
+  background-color: #eef8ff; /* Highlight row on hover */
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+td {
+  padding: 1rem 1.5rem;
+  color: #333;
+}
+
+/* Style the "No breweries found" message */
+td[colSpan="3"] {
+  text-align: center;
+  padding: 2rem;
+  color: #888;
+  font-style: italic;
+}
