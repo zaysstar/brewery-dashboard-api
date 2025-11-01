@@ -141,3 +141,41 @@ td[colSpan="3"] {
   color: #888;
   font-style: italic;
 }
+
+.charts-section {
+  display: flex;
+  flex-wrap: wrap; /* Allow charts to stack on small screens */
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.chart-container {
+  flex: 1; /* Each chart takes up equal space */
+  min-width: 300px; /* Prevent charts from getting too small */
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.chart-container h3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+/* Recharts text fix */
+.recharts-text, .recharts-legend-item-text {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.brewery-link {
+  font-weight: 600;
+  color: #007aff;
+  text-decoration: none;
+}
+
+.brewery-link:hover {
+  text-decoration: underline;
+}
