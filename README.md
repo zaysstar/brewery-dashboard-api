@@ -10,7 +10,8 @@
 
 ### 🎥 Walkthrough GIF
 
-![Recording2025-11-01190448-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/0f6657b8-f285-435e-8eb3-17487a38fc4e)
+![ab8b0c](https://github.com/user-attachments/assets/78f5b248-a3a1-4633-b852-e9ee53b4466a)
+
 
 ---
 
